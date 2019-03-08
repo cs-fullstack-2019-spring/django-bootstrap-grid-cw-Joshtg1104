@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'BootGridApp/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'BootGridApp/css/base.css' %}">
+    <script src="{% static 'BootGridApp/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'BootGridApp/js/bootstrap.js' %}"></script>
+</head>
+<body>
+{% block css %}
+{% endblock css %}
+
+<div class="divEdit cage">
+    <header>
+    {% block header %}
+        Welcome to the Test Page
+    {% endblock header %}
+    </header>
+    <article>
+    {% block content %}
+        This is a test
+    {% endblock content %}
+    </article>
+</div>
+
+</body>
+</html>
